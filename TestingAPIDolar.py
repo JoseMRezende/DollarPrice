@@ -25,8 +25,8 @@ layout = [  [sg.Text('Value Converted To Reais',font=font)],
             [sg.Text('Price of Dollar R$:',font=font),sg.Text(item1,size=(20, 1),key='-text-',font=font)],           # type: ignore
             [sg.Text('Price of Euro   R$:',font=font),sg.Text(item2,size=(20, 1),key='-text-',font=font)],           # type: ignore
             [sg.Text('Price of Coin   R$:',font=font),sg.Text(item3,size=(20, 1),key='-text-',font=font)],           # type: ignore
-            [sg.Button('Close',size=(200, 1), key='-text-', font=font,button_color = 'Yellow')],
-            [sg.Text(dt,size=(200, 1), key='-text-',justification='center')]  ]                                                                                 # type: ignore 
+            [sg.Button('Close',size=(12, 1),font=font,button_color = 'Yellow'),sg.Button('Update',size=(12, 1),font=font,button_color = 'Blue')],
+            [sg.Text(dt,size=(200, 1), key='-text-',justification='center')]  ]                                      # type: ignore 
 window = sg.Window('Quote Table', layout,size=(300, 180), element_justification='center')
 while True:
     event, values = window.read()  # type: ignore
